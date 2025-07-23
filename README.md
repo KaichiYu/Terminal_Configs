@@ -48,6 +48,10 @@ echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 **自定义配置：**
 
 在 `~/.config` 目录下创建 `starship.toml` 文件，并将 [starship配置](starship.toml) 添加到该文件中。
+```bash
+cd ~/.config
+touch starship.toml
+```
 
 ## 🐍 Conda 集成配置
 
