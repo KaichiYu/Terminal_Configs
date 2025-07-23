@@ -1,12 +1,10 @@
-
-
-
 add_newline = true
 
 format = """
 $env_var\
 $os\
 $directory\
+$hostname\
 $git_branch\
 $git_status\
 $fill\
@@ -67,6 +65,13 @@ format = '[on](white) [$symbol$branch ]($style)'
 [git_status]
 style = 'fg:red'
 format = '([$all_status$ahead_behind]($style) )'
+
+[hostname]
+ssh_only = true
+ssh_symbol = ' '
+format = '[$ssh_symbol$hostname](green) '
+trim_at = '.companyname.com'
+disabled = false
 
 [fill]
 symbol = ' '

@@ -1,7 +1,7 @@
 # 终端配置指南
 
 > 针对非root用户的终端环境配置，使用 Zsh + Starship 打造现代化的命令行体验
-
+![终端配置示例](image.png)
 ## 🚀 安装步骤
 
 ### 1. 🔧 安装 Zsh
@@ -53,7 +53,7 @@ cd ~/.config
 touch starship.toml
 ```
 
-## 🐍 Conda 集成配置
+### 3. 🐍 Conda 集成配置
 
 **初始化 Conda 环境：**
 
@@ -67,4 +67,19 @@ conda init zsh
 由于 Starship 已经显示 conda 环境信息，我们可以禁用 conda 自带的提示符，避免重复显示：
 ```bash
 conda config --set changeps1 False
+```
+
+### 4. neofetch 配置（可选）
+其实 [neofetch](https://github.com/dylanaraps/neofetch) 就是一个 bash 脚本，无需编译和复杂依赖，因此只需要下载到本地即可运行
+```bash
+# 1. 下载 neofetch 脚本到你自己的 bin 文件夹
+mkdir -p ~/bin
+curl -Lo ~/bin/neofetch https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch
+ 
+# 2. 赋予执行权限
+chmod +x ~/bin/neofetch
+
+# 3. 把 ~/bin 添加到 PATH（如果还没有的话）
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 ```
