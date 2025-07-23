@@ -6,7 +6,7 @@
 
 ### 1. 🔧 安装 Zsh
 
-使用官方脚本安装 Zsh，非root用户请选择安装路径为 `~/.local`。安装过程中当提示将 zsh 加入 PATH 时，选择 "quit and do nothing"（我们将在后续步骤中手动配置）。
+使用[第三方脚本](https://github.com/romkatv/zsh-bin)安装 Zsh，非root用户请选择安装路径为 `~/.local`。安装过程中当提示将 zsh 加入 PATH 时，选择 "quit and do nothing"（我们将在后续步骤中手动配置）。
 
 **执行安装命令：**
 ```bash
